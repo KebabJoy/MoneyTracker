@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/SignInFragment">
+
+    <fragment
+        android:id="@+id/SignInFragment"
+        android:name="com.example.moneytracker.SignInFragment"
+        android:label="@string/sign_in_label"
+        tools:layout="@layout/sign_in_fragment">
+        <action
+            android:id="@+id/action_SignInFragment_to_SignUpFragment"
+            app:destination="@id/SignUpFragment" />
+        <action
+            android:id="@+id/action_SignInFragment_to_Purchases"
+            app:destination="@id/Purchases" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/SignUpFragment"
+        android:name="com.example.moneytracker.SignUpFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/sign_up_fragment">
+        <action
+            android:id="@+id/action_SignUpFragment_to_SignInFragment"
+            app:destination="@id/SignInFragment" />
+        <action
+            android:id="@+id/action_SignUpFragment_to_Purchases"
+            app:destination="@id/Purchases" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Purchases"
+        android:name="com.example.moneytracker.PurchasesFragment"
+        android:label="@string/purchases_label"
+        tools:layout="@layout/purchases">
+        <action
+            android:id="@+id/action_Purchase_to_newPurchase"
+            app:destination="@id/newPurchase" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/newPurchase"
+        android:name="com.example.moneytracker.NewPurchaseFragment"
+        android:label="@string/purchases_label"
+        tools:layout="@layout/new_purchase">
+        <action
+            android:id="@+id/action_newPurchase_to_Purchases"
+            app:destination="@id/Purchases" />
+    </fragment>
+
+</navigation>

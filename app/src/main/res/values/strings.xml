@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MoneyTracker</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Регистрация</string>
+    <string name="sign_in_label">Логин</string>
+    <string name="purchases_label">Покупки</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name="amount_hint">Введите сумму</string>
+    <string name="purchase_title_hint">Введите название</string>
+    <string name="password_confirmation_hint">Подтвердите пароль</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Зарегистрироваться</string>
+    <string name="login">Войти</string>
+    <string name="email_hint">Введите почту</string>
+    <string name="name_hint">Введите имя</string>
+    <string name="create_purchase_hint">Создать покупку</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="question_title">Заголовок</string>
+    <string name="question_body">Вопрос</string>
+    <string name="submit_question">Задать</string>
+</resources>

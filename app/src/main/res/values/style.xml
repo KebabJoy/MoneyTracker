@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AuthEdit" >
+        <item name="android:inputType">textNoSuggestions</item>
+    </style>
+
+    <style name="questionField">
+        <item name="android:inputType">textNoSuggestions</item>
+        <item name="android:hint">Question</item>
+        <item name="colorControlNormal">#d32f2f</item>
+        <item name="colorControlActivated">#ff5722</item>
+        <item name="colorControlHighlight">#f44336</item>
+    </style>
+</resources>
