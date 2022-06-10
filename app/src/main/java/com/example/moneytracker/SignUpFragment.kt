@@ -1,15 +1,15 @@
 package com.example.moneytracker
 
+import android.annotation.TargetApi
 import android.content.Context
+import android.os.Build
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.widget.doOnTextChanged
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.moneytracker.databinding.ActivityMainBinding.inflate
 import com.example.moneytracker.databinding.SignUpFragmentBinding
 import com.example.moneytracker.model.plain_object.user.UserCreateRequestPlainObject
 import com.example.moneytracker.services.api.UserApi
@@ -21,6 +21,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
+
 
 class SignUpFragment : Fragment() {
 
@@ -40,7 +41,7 @@ class SignUpFragment : Fragment() {
 
     private fun userParams(): UserCreateRequestPlainObject {
         return UserCreateRequestPlainObject(
-            name = binding.authName.text.toString(),
+            email = binding.authName.text.toString(),
             password = binding.authPassword.text.toString(),
             passwordConfirmation = binding.authPasswordConfirmation.text.toString()
         )
